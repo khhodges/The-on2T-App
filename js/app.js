@@ -136,6 +136,15 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'ionic.service.analyti
                 }
             }
         })
+                .state('app.contact', {
+                    url: '/contact',
+                    views: {
+                        'menuContent': {
+                            templateUrl: 'templates/selectedContact.html',
+                            controller: 'ContactCtrl'
+                        }
+                    }
+                })
         .state('app.image', {
             url: '/image/:id',
             views: {

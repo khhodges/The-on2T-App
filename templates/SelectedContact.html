@@ -1,0 +1,33 @@
+﻿<ion-view title="Selected Contact">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img ng-src="{{contact.photos[0].value}}">
+                <h2>{{contact.name.formatted}}</h2>
+                <p>{{contact.phoneNumbers[0].value}}</   <p>{{contact.emails[0].value}}</p>
+            </div>
+        </div>
+
+        <ion-list>
+            <ion-item>
+                <a ng-repeat="address in contact.addresses" class="item item-icon-left">
+                    <i class="icon ion-wand"></i>
+
+                    {{address.formatted}}<br />
+                    {{address.streetAddress}}<br />
+                    {{address.locality}}<br />
+                    {{address.region}}<br />
+                    {{address.postalCode}}<br />
+                    {{address.country}}<br />
+
+                </a>
+            </ion-item>
+        </ion-list>
+        <button class="button button-block button-positive" href="#/app/todos">Add to Cart</button>
+    </ion-content>
+</ion-view>
+
