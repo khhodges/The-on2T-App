@@ -3,15 +3,16 @@
   xmlns   = "http://www.w3.org/ns/widgets"
   versionCode = "10"
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id="com.ionicframework.demo374629"
 	version="0.1.4" >
 
 
   <!-- versionCode is optional and Android only -->
 
-  <name>The on2t App</name>
+  <name>The on2T App</name>
 
   <description>
-    An Demo SIPantic project.
+    A SIPantic project.
   </description>
 
   <author email="ken@sipantic.net" href="http://www.on2t.com/">
